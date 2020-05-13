@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>background</title>
+    <url>/2020/05/13/background/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>My first blog post</title>
     <url>/2020/05/09/test/</url>
     <content><![CDATA[<h2 id="Welcome-to-my-blog"><a href="#Welcome-to-my-blog" class="headerlink" title="Welcome to my blog."></a>Welcome to my blog.</h2><ul>
@@ -23,11 +28,6 @@
       <tags>
         <tag>blog</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>background</title>
-    <url>/2020/05/13/background/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
