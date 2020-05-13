@@ -175,7 +175,7 @@ body {
   height: 100%;
 }
 body {
-  background: url("/images/background.jpg");
+  background: url("https://www.z4a.net/images/2019/05/12/006Xmmmgly1fznw2bvhf3j31hc0ra1e1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -1203,7 +1203,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #166c29;
+  background: #ff2ee4;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
