@@ -175,7 +175,7 @@ body {
   height: 100%;
 }
 body {
-  background: url("https://www.z4a.net/images/2019/05/12/006Xmmmgly1fznw2bvhf3j31hc0ra1e1.jpg");
+  background: url("/images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -183,6 +183,7 @@ body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
   line-height: 2;
+  opacity: 0.9;
 }
 @media (max-width: 991px) {
   body {
@@ -1203,7 +1204,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #83e4eb;
+  background: #7a44dd;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2377,7 +2378,7 @@ ul.breadcrumb li + li:last-child {
   }
 }
 .content-wrap {
-  background: rgba(255,255,255,0.7);
+  background: var(--content-bg-color);
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   box-sizing: border-box;
@@ -2622,7 +2623,7 @@ ul.breadcrumb li + li:last-child {
   padding: 0;
 }
 .content-wrap {
-  background: rgba(255,255,255,0.7);
+  background: initial;
   box-shadow: initial;
   padding: initial;
 }
