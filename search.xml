@@ -25,30 +25,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客搭建过程中遇到的两个问题</title>
-    <url>/2020/05/13/background/</url>
-    <content><![CDATA[<h2 id="git-clone太慢导致clone失败？使用hexo的next主题无法设置背景图片？别担心-最新解决方案来啦"><a href="#git-clone太慢导致clone失败？使用hexo的next主题无法设置背景图片？别担心-最新解决方案来啦" class="headerlink" title="git clone太慢导致clone失败？使用hexo的next主题无法设置背景图片？别担心,最新解决方案来啦"></a>git clone太慢导致clone失败？使用hexo的next主题无法设置背景图片？别担心,最新解决方案来啦</h2><p>  <del>有营销号内味了</del></p>
-<a id="more"></a>
-<p>今天 <del>闲得无聊</del> 上完网课突然又想来捣鼓一下博客，看看能不能找到解决之前那些问题的办法，没想到还真被我找到了。</p>
-<h3 id="git-clone加速"><a href="#git-clone加速" class="headerlink" title="git clone加速"></a>git clone加速</h3><p>这个问题是之前就解决的 <del>废话，不解决你怎么用的next主题</del></p>
-<p>犹记得当初用 <code>git clone https://github.com/theme-next/hexo-theme-next themes/next</code>从github克隆next主题时的心酸，看着十多kb的下载速度和几千kb的进度条我想着我能等，结果等到一半给我弹出来一个clone失败？？？</p>
-<p>不对，肯定是运气不好，再试一次！</p>
-<p>结果还是这样…</p>
-<p>不行，不能半途而废，再来！</p>
-<p>几分钟后…</p>
-<p>狂敲键盘~</p>
-<p>最后我去网上找到了这个<a href="https://github.zhlh6.cn/" target="_blank" rel="noopener">网站</a>，你只需要把仓库地址输进去再把输出的地址和clone的地址换一下就OK啦<br>代码如下</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone git@git.zhlh6.cn:theme-next&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
-<h3 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h3><p>这个问题困扰了我很久，今天总算是解决了</p>
-<p>之前在网上看到的教程都是说在hexo/themes/next/source/css/_custom/路径下的custom.styl文件中加入一段代码，但是那都是旧版next主题的方法，next更新以后没有了custom.styl文件，也就不能用了，那怎么办？感谢<a href="https://minyuchengmin.github.io/2020/02/26/hexo-bo-ke-xin-ban-next-zhu-ti-da-jian/" target="_blank" rel="noopener">Fractures大佬</a>提供的解决办法</p>
-<p>打开themes\next\source\css_common\scaffolding的base.styl，对代码做以下修改</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background: url(&#x2F;images&#x2F;background.jpg); &#x2F;&#x2F;图片位置或网址</span><br><span class="line">    &#x2F;&#x2F;https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900  这是我看到的网上教程常用的随机背景图API，感觉图片比较普通</span><br><span class="line">    &#x2F;&#x2F;https:&#x2F;&#x2F;s0.xinger.ink&#x2F;acgimg&#x2F;acgurl.php   来自某神秘网站，二次元，里面很多图片都特别好看，但有些尺度比较大，慎用</span><br><span class="line">  background-repeat: no-repeat;</span><br><span class="line">  background-attachment:fixed;</span><br><span class="line">  background-size: cover;</span><br><span class="line">  color: var(--text-color);&#x2F;&#x2F;文本颜色</span><br><span class="line">  font-family: $font-family-base;&#x2F;&#x2F;字体</span><br><span class="line">  font-size: $font-size-base;&#x2F;&#x2F;文字大小  修改示例：2vh</span><br><span class="line">  line-height: $line-height-base;&#x2F;&#x2F;行距 修改示例：2vh</span><br><span class="line">  opacity: 0.9; &#x2F;&#x2F;不透明度</span><br><span class="line"></span><br><span class="line">  +tablet-mobile() &#123;</span><br><span class="line">    &#x2F;&#x2F; Remove the padding of body when the sidebar is open.</span><br><span class="line">    padding-left: 0 !important;</span><br><span class="line">    padding-right: 0 !important;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h3><p>这算是第一篇<del>正经的</del>分享博文，废话很多，请见谅。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2020/05/09/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
